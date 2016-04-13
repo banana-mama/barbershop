@@ -8,9 +8,8 @@
 <body>
     <header class="header-main">
         <div class="wrap">
-            <nav>
+            <nav class="nav-main">
                 <ul>
-                    <li><a href="#">Главная</a></li>
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Новости</a></li>
                     <li><a href="#">Прайс-лист</a></li>
@@ -18,82 +17,88 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="user-block">
+            <section class="user-block">
                 <a href="#" class="login">Вход</a>
-            </div>
+            </section>
         </div>
     </header>
     <main class="wrap">
-        <div class="main-logo">
+        <section class="main-logo">
             <img src="img/main-logo.png" width="368" height="204" alt="logo">
-        </div>
-        <div class="promos">
-            <section>
+        </section>
+        <section class="promos">
+            <div>
                 <b>Быстро</b>
                 <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной стрижки-минутки!</p>
-            </section>
-            <section>
+            </div>
+            <div>
                 <b>Круто</b>
                 <p>Забудьте, как Вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино! Во всяком случае внешне.</p>
-            </section>
-            <section>
+            </div>
+            <div>
                 <b>Дорого</b>
                 <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
-            </section>
-        </div>
-        <div class="main-container">
-            <section class="left">
-                <h2>Новости</h2>
-                <ul class="news-list">
-                    <li>
-                        <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-                        <time datetime="2016-09-25">25 сентября</time>
-                    </li>
-                    <li>
-                        <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-                        <time datetime="2016-09-19">19 сентября</time>
-                    </li>
-                </ul>
-                <a href="#" class="btn">Все новости</a>
-            </section>
-            <section class="right">
-                <h2>Фотогалерея</h2>
-                <div class="gallery">
+            </div>
+        </section>
+        <div class="index-container">
+            <div class="content-left">
+                <section class="container-news">
+                    <h2>Новости</h2>
+                    <ul>
+                        <li>
+                            <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+                            <time datetime="2016-09-25">25 сентября</time>
+                        </li>
+                        <li>
+                            <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+                            <time datetime="2016-09-19">19 сентября</time>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn">Все новости</a>
+                </section>
+            </div>
+            <div class="content-right">
+                <section class="container-gallery">
+                    <h2>Фотогалерея</h2>
                     <figure>
                         <img src="#" width="200" height="100" alt="room">
                     </figure>
                     <button class="btn btn-prev">Назад</button>
                     <button class="btn btn-next">Вперед</button>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
-        <div class="main-container">
-            <section class="left">
-                <h2>Контактная информация</h2>
-                <p>
-                    Барбершоп «Бородинский»<br>
-                    Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                    Телефон: +7 (495) 666-02-66
-                </p>
-                <p>
-                    Время работы:<br>
-                    Пн - Пт: с 10:00 до 22:00<br>
-                    Сб-Вс: с 10:00 до 19:00
-                </p>
-                <a href="#" class="btn">Как проехать</a>
-                <a href="#" class="btn">Обратная связь</a>
-            </section>
-            <section class="right">
-                <h2>Записаться</h2>
-                <p>Укажите желауемую дату и время и мы свяжемся с Вами для подтверждения брони</p>
-                <form method="post" action="#" class="form-appointment">
-                    <input type="text" name="date" placeholder="Дата">
-                    <input type="text" name="time" placeholder="Время">
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="tel" name="phone" placeholder="Телефон">
-                    <button type="submit" class="btn btn-big">Отправить</button>
-                </form>
-            </section>
+        <div class="index-container">
+            <div class="content-left">
+                <section class="container-contacts">
+                    <h2>Контактная информация</h2>
+                    <p>
+                        Барбершоп «Бородинский»<br>
+                        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                        Телефон: +7 (495) 666-02-66
+                    </p>
+                    <p>
+                        Время работы:<br>
+                        Пн - Пт: с 10:00 до 22:00<br>
+                        Сб-Вс: с 10:00 до 19:00
+                    </p>
+                    <a href="#" class="btn">Как проехать</a>
+                    <a href="#" class="btn">Обратная связь</a>
+                </section>
+            </div>
+            <div class="content-right">
+                <section class="container-form">
+                    <h2>Записаться</h2>
+                    <p>Укажите желауемую дату и время и мы свяжемся с Вами для подтверждения брони</p>
+                    <form method="post" action="#">
+                        <input type="text" name="date" placeholder="Дата">
+                        <input type="text" name="time" placeholder="Время">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="tel" name="phone" placeholder="Телефон">
+                        <button type="submit" class="btn btn-big">Отправить</button>
+                    </form>
+                </section>
+            </div>
         </div>
     </main>
     <footer class="footer-main">
@@ -110,7 +115,7 @@
             <a href="#" class="social-btn social-btn-instagram">Instagram</a>
         </section>
         <section>
-            <p>Давайте дружить!</p>
+            <p>Разработано:</p>
             <a href="#" class="btn">HTMLAcademy.ru</a>
         </section>
     </footer>
