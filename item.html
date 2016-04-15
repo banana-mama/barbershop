@@ -8,7 +8,7 @@
 <body>
     <header class="header-main">
         <div class="wrap">
-            <nav class="nav-main">
+            <nav class="header-nav">
                 <ul>
                     <li><a href="#" class="logo">Главная</a></li>
                     <li><a href="#">Информация</a></li>
@@ -18,13 +18,25 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="user-block">
-                <a href="#" class="login">Вход</a>
-            </div>
+            <section class="user-block">
+                <a href="#" class="login-btn">Вход</a>
+                <!--<div class="login-frame">
+                    <h2>Личный кабинет</h2>
+                    <p>Введите пожалуйста свой логин и пароль</p>
+                    <form action="#" method="post" class="login-form">
+                        <input type="text" name="login" class="form-login">
+                        <input type="password" name="password" class="form-password">
+                        <input type="checkbox" name="remember" id="checkbox-remember" checked>
+                        <label for="checkbox-remember">Запомните меня</label>
+                        <a href="#">Я забыл пароль!</a>
+                        <button type="submit" class="btn">Войти</button>
+                    </form>
+                </div>-->
+            </section>
         </div>
     </header>
     <main class="wrap">
-        <article class="product-item">
+        <article class="item-product">
             <header>
                 <h1>Набор дял путешествий «Baxter of California»</h1>
                 <ul class="breadcrumbs">
@@ -69,20 +81,20 @@
         </article>
     </main>
     <footer class="footer-main">
-        <section>
+        <section class="footer-contacts">
             Барбершоп «Бородинский»<br>
             Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
             <a href="#">Как нас найти?</a><br>
             Телефон: +7 (495) 666-02-66
         </section>
-        <section>
+        <section class="footer-social">
             <p>Давайте дружить!</p>
             <a href="#" class="social-btn social-btn-vk">ВКонтакте</a>
             <a href="#" class="social-btn social-btn-facebook">Facebook</a>
             <a href="#" class="social-btn social-btn-instagram">Instagram</a>
         </section>
-        <section>
-            <p>Давайте дружить!</p>
+        <section class="footer-copyrights">
+            <p>Разработано:</p>
             <a href="#" class="btn">HTMLAcademy.ru</a>
         </section>
     </footer>
