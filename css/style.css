@@ -1,1 +1,252 @@
-/* CSS file */
+@charset "utf-8";
+
+/*****************************
+          BASIC
+*****************************/
+
+html,
+body,
+figure,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrap {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/*****************************
+          HEADER
+*****************************/
+
+.main-header {
+    margin-bottom: 55px;
+}
+
+.header-nav {
+    width: 700px;
+    min-height: 70px;
+    float: left;
+}
+
+.user-block {
+    width: 220px;
+    min-height: 70px;
+    float: right;
+}
+
+/*****************************
+          INDEX
+*****************************/
+
+.index-logo {
+    height: 204px;
+    width: 368px;
+    margin: 0 auto 30px;
+}
+
+.index-promo {
+    margin-bottom: 85px;
+}
+
+.promo-item {
+    width: 300px;
+    min-height: 175px;
+    float: left;
+    margin-right: 20px;
+}
+
+.promo-item:last-child {
+    margin-right: 0;
+}
+
+.index-container {
+    padding: 55px 80px;
+    margin-bottom: 35px;
+}
+
+.index-container-left {
+    float: left;
+    width: 380px;
+    min-height: 330px;
+}
+
+.index-container-right {
+    float: right;
+    min-height: 330px;
+    width: 300px;
+}
+
+/*****************************
+          PAGE
+*****************************/
+
+.page-header {
+    min-height: 75px;
+    margin-bottom: 55px;
+}
+
+/*****************************
+          ITEM
+*****************************/
+
+.item-content-left {
+    width: 460px;
+    min-height: 670px;
+    float: left;
+}
+
+.item-content-right {
+    width: 390px;
+    float: right;
+}
+
+.images-small {
+    font-size: 0;
+}
+
+.images-small img {
+    margin-right: 20px;
+}
+
+.images-small img:last-child {
+    margin-right: 0;
+}
+
+/*****************************
+          SHOP
+*****************************/
+
+.shop-filters {
+    float: left;
+    width: 220px;
+    min-height: 575px;
+}
+
+.shop-items,
+.shop-pagination {
+    float: right;
+    width: 700px;
+    font-size: 0;
+    margin-bottom: 25px;
+}
+
+.shop-item {
+    width: 220px;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+    min-height: 290px;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.shop-pagination {
+    font-size: 16px;
+}
+
+.shop-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.shop-page .main-footer {
+    margin-top: 25px;
+}
+
+/*****************************
+          PRICE-LIST
+*****************************/
+
+.nice-header {
+    display: block;
+    min-height: 45px;
+    margin-bottom: 70px;
+}
+
+.page-row {
+    min-height: 165px;
+    margin-bottom: 65px;
+    font-size: 0;
+}
+
+.row-content {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 16px;
+    width: 460px;
+}
+
+.row-content:nth-child(odd) {
+    margin-right: 20px;
+}
+
+.row-content p,
+.row-content h2 {
+    width: 380px;
+}
+
+/*****************************
+          FOOTER
+*****************************/
+
+.main-footer {
+    margin-top: 65px;
+    padding: 30px 0 40px;
+}
+
+.footer-contacts {
+    width: 320px;
+    min-height: 90px;
+    margin-right: 60px;
+    float: left;
+}
+
+.footer-social {
+    width: 180px;
+    min-height: 90px;
+    float: left;
+}
+
+.footer-copyrights {
+    width: 140px;
+    min-height: 90px;
+    float: right;
+}
+
+/*****************************
+          РАЗМЕТКА
+*****************************/
+
+/*
+
+body > * {
+    background-color: rgba(255, 99, 71, .2);
+    -webkit-box-shadow: inset 0 0 0 2px rgb(255, 99, 71);
+    -moz-box-shadow: inset 0 0 0 2px rgb(255, 99, 71);
+    box-shadow: inset 0 0 0 2px rgb(255, 99, 71);
+}
+
+body > * > * {
+    background-color: rgba(115, 255, 121, 0.2);
+    -webkit-box-shadow: inset 0 0 0 2px rgb(115, 255, 121);
+    -moz-box-shadow: inset 0 0 0 2px rgb(115, 255, 121);
+    box-shadow: inset 0 0 0 2px rgb(115, 255, 121);
+}
+
+body > * > * > * {
+    background-color: rgba(165, 180, 255, 0.2);
+    -webkit-box-shadow: inset 0 0 0 2px rgb(165, 180, 255);
+    -moz-box-shadow: inset 0 0 0 2px rgb(165, 180, 255);
+    box-shadow: inset 0 0 0 2px rgb(165, 180, 255);
+}
+
+*/
