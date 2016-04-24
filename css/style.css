@@ -13,15 +13,15 @@ ul {
 }
 
 .clearfix::after {
-    content: "";
     display: table;
     clear: both;
+    content: "";
 }
 
 .wrap {
     width: 940px;
-    padding: 0 10px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 /*****************************
@@ -33,15 +33,15 @@ ul {
 }
 
 .header-nav {
+    float: left;
     width: 700px;
     min-height: 70px;
-    float: left;
 }
 
 .user-block {
+    float: right;
     width: 220px;
     min-height: 70px;
-    float: right;
 }
 
 /*****************************
@@ -49,8 +49,8 @@ ul {
 *****************************/
 
 .index-logo {
-    height: 204px;
     width: 368px;
+    height: 204px;
     margin: 0 auto 30px;
 }
 
@@ -59,9 +59,9 @@ ul {
 }
 
 .promo-item {
+    float: left;
     width: 300px;
     min-height: 175px;
-    float: left;
     margin-right: 20px;
 }
 
@@ -70,8 +70,8 @@ ul {
 }
 
 .index-container {
-    padding: 55px 80px;
     margin-bottom: 35px;
+    padding: 55px 80px;
 }
 
 .index-container-left {
@@ -82,8 +82,8 @@ ul {
 
 .index-container-right {
     float: right;
-    min-height: 330px;
     width: 300px;
+    min-height: 330px;
 }
 
 /*****************************
@@ -100,14 +100,14 @@ ul {
 *****************************/
 
 .item-content-left {
+    float: left;
     width: 460px;
     min-height: 670px;
-    float: left;
 }
 
 .item-content-right {
-    width: 390px;
     float: right;
+    width: 390px;
 }
 
 .images-small {
@@ -134,20 +134,20 @@ ul {
 
 .shop-items,
 .shop-pagination {
+    font-size: 0;
     float: right;
     width: 700px;
-    font-size: 0;
     margin-bottom: 25px;
 }
 
 .shop-item {
-    width: 220px;
-    display: inline-block;
-    margin-right: 20px;
     font-size: 16px;
+    display: inline-block;
+    width: 220px;
     min-height: 290px;
-    vertical-align: top;
+    margin-right: 20px;
     margin-bottom: 20px;
+    vertical-align: top;
 }
 
 .shop-pagination {
@@ -173,16 +173,16 @@ ul {
 }
 
 .page-row {
+    font-size: 0;
     min-height: 165px;
     margin-bottom: 65px;
-    font-size: 0;
 }
 
 .row-content {
-    display: inline-block;
-    vertical-align: bottom;
     font-size: 16px;
+    display: inline-block;
     width: 460px;
+    vertical-align: bottom;
 }
 
 .row-content:nth-child(odd) {
@@ -204,22 +204,22 @@ ul {
 }
 
 .footer-contacts {
+    float: left;
     width: 320px;
     min-height: 90px;
     margin-right: 60px;
-    float: left;
 }
 
 .footer-social {
+    float: left;
     width: 180px;
     min-height: 90px;
-    float: left;
 }
 
 .footer-copyrights {
+    float: right;
     width: 140px;
     min-height: 90px;
-    float: right;
 }
 
 /*****************************
