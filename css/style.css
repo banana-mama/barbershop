@@ -5,11 +5,17 @@
 *****************************/
 
 html,
-body,
-figure,
-ul {
+body {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
 }
 
 .clearfix::after {
@@ -29,29 +35,97 @@ ul {
 *****************************/
 
 .main-header {
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 70px;
     margin-bottom: 55px;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 .header-nav {
     float: left;
-    width: 700px;
-    min-height: 70px;
+    max-width: 700px;
+}
+
+.header-nav ul {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-nav li {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header-nav a {
+    display: block;
+    padding: 25px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header-nav a:hover {
+    background-color: #242424;
 }
 
 .user-block {
+    font-size: 0;
     float: right;
-    width: 220px;
-    min-height: 70px;
+    max-width: 220px;
+}
+
+.login-btn {
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    padding: 25px 20px;
+    padding-left: 50px;
+    vertical-align: top;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.login-btn::before {
+    position: absolute;
+    top: 27px;
+    left: 23px;
+    width: 18px;
+    height: 16px;
+    content: "";
+    opacity: 0.3;
+    background: transparent url("../img/sprites/spritesheet.png") no-repeat -50px -402px;
+}
+
+.login-btn:hover::before {
+    opacity: 1;
+}
+
+.login-btn:hover {
+    background-color: #242424;
 }
 
 /*****************************
           INDEX
 *****************************/
 
+body.index-page {
+    color: #ffffff;
+    background: #000000 url("../img/bg-index.jpg") no-repeat center top;
+}
+
 .index-logo {
     width: 368px;
     height: 204px;
     margin: 0 auto 30px;
+}
+
+.index-logo img {
+    width: 368px;
+    height: 204px;
 }
 
 .index-promo {
@@ -63,27 +137,145 @@ ul {
     width: 300px;
     min-height: 175px;
     margin-right: 20px;
+    text-align: center;
 }
 
 .promo-item:last-child {
     margin-right: 0;
 }
 
+.promo-title {
+    font-size: 30px;
+    line-height: 42px;
+    position: relative;
+    display: block;
+    margin-bottom: 35px;
+    padding-bottom: 40px;
+}
+
+.promo-title::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    content: "";
+    transform: translateX(-50%) rotate(45deg);
+    background-color: #ffffff;
+}
+
+.promo-item p {
+    margin: 10px;
+    margin-bottom: 0;
+}
+
 .index-container {
     margin-bottom: 35px;
     padding: 55px 80px;
+    color: #000000;
+    background: url("../img/index-container-line.png") no-repeat center,
+    #f8f5f2 url("../img/bg-index-container.png");
 }
 
 .index-container-left {
+    position: relative;
     float: left;
     width: 380px;
-    min-height: 330px;
+    min-height: 340px;
 }
 
 .index-container-right {
+    position: relative;
     float: right;
     width: 300px;
-    min-height: 330px;
+    min-height: 340px;
+}
+
+.index-container h2 {
+    font-size: 30px;
+    line-height: 42px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.index-container p {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.index-container-news {
+    margin: 0;
+    padding: 0;
+    padding-right: 80px;
+    list-style: none;
+}
+
+.index-container-news li {
+    margin-bottom: 30px;
+}
+
+.index-container-news li p {
+    margin: 0;
+}
+
+.index-container time {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    text-transform: none;
+}
+
+.index-container-gallery figure {
+    height: 164px;
+    margin: 0;
+    margin-bottom: 35px;
+    border: 7px solid #ffffff;
+    background-color: #e5e5e5;
+}
+
+.index-container-gallery img {
+    width: 286px;
+    height: 164px;
+}
+
+.index-container-gallery .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+
+.index-container-gallery .btn-prev {
+    left: 0;
+}
+
+.index-container-gallery .btn-next {
+    right: 0;
+}
+
+.index-container-form input {
+    font: inherit;
+    float: left;
+    width: 106px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 7px 15px;
+    text-transform: inherit;
+    color: inherit;
+    border: 2px solid #000000;
+    outline: none;
+    background-color: #f9f6f3;
+}
+.index-container-form input:nth-child(even) {
+    margin-right: 0;
+}
+.index-container-form input:focus {
+    border-color: #663d15;
+}
+
+.index-container-form .btn {
+    clear: both;
+    width: 100%;
 }
 
 /*****************************
@@ -93,6 +285,38 @@ ul {
 .page-header {
     min-height: 75px;
     margin-bottom: 55px;
+}
+
+.btn {
+    font: inherit;
+    display: inline-block;
+    margin-right: 18px;
+    padding: 10px 35px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    text-transform: inherit;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    background-color: #000000;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #663d15;
+}
+
+.btn:disabled,
+.btn.disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn:disabled:hover,
+.btn.disabled:hover {
+    background-color: #000000;
 }
 
 /*****************************
@@ -199,8 +423,15 @@ ul {
 *****************************/
 
 .main-footer {
+    color: #ffffff;
     margin-top: 65px;
     padding: 30px 0 40px;
+    background: #232323 url("../img/bg-footer.png");
+}
+
+.main-footer p {
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .footer-contacts {
@@ -210,16 +441,72 @@ ul {
     margin-right: 60px;
 }
 
+.footer-contacts a {
+    color: #ffffff;
+}
+
+.footer-contacts a:hover {
+    text-decoration: none;
+}
+
 .footer-social {
     float: left;
     width: 180px;
     min-height: 90px;
+    text-align: center;
+}
+
+.social-btn {
+    font-size: 0;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+    transition:
+            background-position 0.15s linear,
+            background-color 0.15s linear;
+    vertical-align: top;
+    text-decoration: none;
+    background: #000000 url("../img/sprites/spritesheet.png") no-repeat center;
+}
+
+.social-btn:hover {
+    background-color: #ffffff;
+}
+
+.social-btn-vk {
+    background-position: -42px -1106px;
+}
+
+.social-btn-vk:hover {
+    background-position: -42px -1222px;
+}
+
+.social-btn-facebook {
+    background-position: -35px -623px;
+}
+
+.social-btn-facebook:hover {
+    background-position: -35px -745px;
+}
+
+.social-btn-instagram {
+    background-position: -39px -867px;
+}
+
+.social-btn-instagram:hover {
+    background-position: -39px -988px;
 }
 
 .footer-copyrights {
     float: right;
-    width: 140px;
+    max-width: 160px;
     min-height: 90px;
+    text-align: center;
+}
+
+.footer-copyrights .btn {
+    margin: 0;
 }
 
 /*****************************
@@ -229,24 +516,24 @@ ul {
 /*
 
 body > * {
-    background-color: rgba(255, 99, 71, .2);
+    background-color: rgba(255, 99, 71, 0.2);
     -webkit-box-shadow: inset 0 0 0 2px rgb(255, 99, 71);
-    -moz-box-shadow: inset 0 0 0 2px rgb(255, 99, 71);
-    box-shadow: inset 0 0 0 2px rgb(255, 99, 71);
+       -moz-box-shadow: inset 0 0 0 2px rgb(255, 99, 71);
+            box-shadow: inset 0 0 0 2px rgb(255, 99, 71);
 }
 
 body > * > * {
     background-color: rgba(115, 255, 121, 0.2);
     -webkit-box-shadow: inset 0 0 0 2px rgb(115, 255, 121);
-    -moz-box-shadow: inset 0 0 0 2px rgb(115, 255, 121);
-    box-shadow: inset 0 0 0 2px rgb(115, 255, 121);
+       -moz-box-shadow: inset 0 0 0 2px rgb(115, 255, 121);
+            box-shadow: inset 0 0 0 2px rgb(115, 255, 121);
 }
 
 body > * > * > * {
     background-color: rgba(165, 180, 255, 0.2);
     -webkit-box-shadow: inset 0 0 0 2px rgb(165, 180, 255);
-    -moz-box-shadow: inset 0 0 0 2px rgb(165, 180, 255);
-    box-shadow: inset 0 0 0 2px rgb(165, 180, 255);
+       -moz-box-shadow: inset 0 0 0 2px rgb(165, 180, 255);
+            box-shadow: inset 0 0 0 2px rgb(165, 180, 255);
 }
 
 */
