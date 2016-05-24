@@ -12,12 +12,14 @@
 <header class="main-header">
     <div class="wrap clearfix">
         <nav class="header-nav">
+            <a href="index.html" class="header-logo">
+                <img src="img/logo.png" height="24" width="111" alt="logo">
+            </a>
             <ul>
-                <li><a href="index.html" class="header-logo"><img src="img/logo.png" height="24" width="111" alt="logo"></a></li>
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="price.html">Прайс-лист</a></li>
-                <li><a href="#" class="current">Магазин</a></li>
+                <li class="current"><a href="shop.html">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
@@ -41,7 +43,7 @@
 
 <main class="wrap clearfix">
     <header class="page-header">
-        <h1>Средства для ухода</h1>
+        <h1 class="page-title">Средства для ухода</h1>
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="shop.html">Магазин</a></li>
@@ -52,18 +54,36 @@
         <form action="#" method="get">
             <fieldset>
                 <legend>Производители:</legend>
-                    <input type="checkbox" name="vendor-baxter" id="vendor-baxter" checked>
-                        <label for="vendor-baxter">Baxter of California</label>
-                    <input type="checkbox" name="vendor-natty" id="vendor-natty">
-                        <label for="vendor-natty">Mr Natty</label>
-                    <input type="checkbox" name="vendor-suavecito" id="vendor-suavecito" checked>
-                        <label for="vendor-suavecito">Suavecito</label>
-                    <input type="checkbox" name="vendor-malingoetz" id="vendor-malingoetz">
-                        <label for="vendor-malingoetz">Malin+Goetz</label>
-                    <input type="checkbox" name="vendor-murrays" id="vendor-murrays">
-                        <label for="vendor-murrays">Murray's</label>
-                    <input type="checkbox" name="vendor-crew" id="vendor-crew" checked>
-                        <label for="vendor-crew">American Crew</label>
+                    <label for="vendor-baxter">
+                        <input type="checkbox" name="vendor-baxter" id="vendor-baxter" checked>
+                        <span class="checkbox-box"></span>
+                        <span class="vendor-name">Baxter of California</span>
+                    </label>
+                    <label for="vendor-natty">
+                        <input type="checkbox" name="vendor-natty" id="vendor-natty">
+                        <span class="checkbox-box"></span>
+                        <span class="vendor-name">Mr Natty</span>
+                    </label>
+                    <label for="vendor-suavecito">
+                        <input type="checkbox" name="vendor-suavecito" id="vendor-suavecito" checked>
+                        <span class="checkbox-box"></span>
+                        <span class="vendor-name">Suavecito</span>
+                    </label>
+                    <label for="vendor-malingoetz">
+                        <input type="checkbox" name="vendor-malingoetz" id="vendor-malingoetz">
+                        <span class="checkbox-box"></span>
+                        <span class="vendor-name">Malin+Goetz</span>
+                    </label>
+                    <label for="vendor-murrays">
+                        <input type="checkbox" name="vendor-murrays" id="vendor-murrays">
+                        <span class="checkbox-box"></span>
+                        <span class="vendor-name">Murray's</span>
+                    </label>
+                    <label for="vendor-crew">
+                        <input type="checkbox" name="vendor-crew" id="vendor-crew" checked>
+                        <span class="checkbox-box"></span>
+                        <span class="vendor-name">American Crew</span>
+                    </label>
             </fieldset>
             <fieldset>
                 <legend>Группы товаров:</legend>
@@ -109,12 +129,14 @@
             <div class="buy"><span class="price">3900 руб.</span><a href="#" class="btn">Купить</a></div>
         </article>
     </section>
-    <ul class="shop-pagination">
-        <li><a href="#">1</a></li>
-        <li><a class="current">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-    </ul>
+    <section class="shop-pagination">
+        <ul>
+            <li><a href="#">1</a></li>
+            <li class="current"><span>2</span></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+        </ul>
+    </section>
 </main>
 
 <footer class="main-footer">
