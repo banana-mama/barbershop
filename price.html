@@ -12,11 +12,13 @@
 <header class="main-header">
     <div class="wrap clearfix">
         <nav class="header-nav">
+            <a href="index.html" class="header-logo">
+                <img src="img/logo.png" height="24" width="111" alt="logo">
+            </a>
             <ul>
-                <li><a href="index.html" class="header-logo"><img src="img/logo.png" height="24" width="111" alt="logo"></a></li>
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Новости</a></li>
-                <li><a href="#" class="current">Прайс-лист</a></li>
+                <li class="current"><span>Прайс-лист</span></li>
                 <li><a href="shop.html">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
@@ -41,15 +43,17 @@
 
 <main class="wrap">
     <header class="page-header">
-        <h1>Прайс-лист</h1>
+        <h1 class="page-title">Прайс-лист</h1>
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li class="current">Прайс-лист</li>
         </ul>
     </header>
-    <h2 class="page-title">Истинно мужская классика</h2>
-    <div class="page-row align-top clearfix">
-        <section class="row-content">
+    <div class="big-title">
+        <b>Истинно мужская классика</b>
+    </div>
+    <div class="page-row clearfix">
+        <section class="page-row-left">
             <h2>Мы используем только<br>лучшие средства:</h2>
             <ul class="vendor-list">
                 <li>Baxter of California</li>
@@ -58,7 +62,7 @@
                 <li>Malin+Goetz</li>
             </ul>
         </section>
-        <section class="row-content">
+        <section class="page-row-right">
             <h2>Цены на услуги<br>наших мастеров:</h2>
             <table>
                 <tr>
@@ -76,12 +80,12 @@
             </table>
         </section>
     </div>
-    <section class="page-row align-bottom clearfix">
-        <div class="row-content">
-            <h2>Несколько слов о нас:</h2>
+    <section class="page-row clearfix">
+        <h2>Несколько слов о нас:</h2>
+        <div class="page-row-left">
             <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. мы не работаем на количество, мы делаем качество.</p>
         </div>
-        <div class="row-content">
+        <div class="page-row-right">
             <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувстовать себя комфортно и свободно!</p>
         </div>
     </section>
@@ -108,5 +112,6 @@
     </div>
 </footer>
 
+<script src="js/prefixfree.min.js"></script>
 </body>
 </html>
