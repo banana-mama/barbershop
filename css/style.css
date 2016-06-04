@@ -1038,6 +1038,22 @@ input[type="radio"][readonly] + label {
           FRAMES
 *****************************/
 
+/* FRAME ANIMATIONS */
+
+@keyframes bounce {
+    0% {transform: translateY(-2000px);}
+    70% {transform: translateY(30px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes shake {
+    0% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(10px);}
+    20%, 40%, 60%, 80% {transform: translateX(-10px);}
+    100% {transform: translateX(0);}
+}
+
 /* OVERLAY */
 
 .overlay {
@@ -1049,6 +1065,10 @@ input[type="radio"][readonly] + label {
     left: 0;
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-opened {
+    display: block;
 }
 
 /* LOGIN FRAME */
@@ -1068,7 +1088,16 @@ input[type="radio"][readonly] + label {
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
 }
 
-.login-frame::after {
+.login-frame-opened {
+    display: block;
+    animation: bounce .5s;
+}
+
+.login-frame-error {
+    animation: shake .5s;
+}
+
+.login-frame-close {
     position: absolute;
     top: 0;
     right: -45px;
@@ -1167,13 +1196,19 @@ input[type="radio"][readonly] + label {
     box-sizing: border-box;
     width: 780px;
     height: 575px;
-    transform: translate(-50%, -50%);
+    margin-left: -390px;
+    margin-top: -285px;
     border: 7px solid #ffffff;
     background: #e5e5e5 url("../img/map.jpg") no-repeat center;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
 }
 
-.map-frame::after {
+.map-frame-opened {
+    display: block;
+    animation: bounce .5s;
+}
+
+.map-frame-close {
     position: absolute;
     top: -7px;
     right: -7px;

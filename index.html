@@ -83,7 +83,7 @@
                 Пн&nbsp;&mdash; Пт: с&nbsp;10:00 до&nbsp;22:00<br>
                 Сб-Вс: с&nbsp;10:00 до&nbsp;19:00
             </p>
-            <a href="#" class="btn">Как проехать</a>
+            <a href="#" class="btn" id="map-frame-open">Как проехать</a>
             <a href="#" class="btn">Обратная связь</a>
         </div>
         <div class="index-container-right">
@@ -139,11 +139,24 @@
         <a href="#">Я забыл пароль!</a>
         <button type="submit" class="btn">Войти</button>
     </form>
+    <div class="login-frame-close"></div>
 </div>
 
 <div class="map-frame">
-    <div class="map-frame-map"></div>
+    <iframe
+            width="766"
+            height="561"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBww-8OY_1tpAn6EY1QaYYaOZTO-kUNFAs
+            &q=Большая+Конюшенная+ул.,+19,+Санкт-Петербург,+191186
+            &zoom=16"
+            allowfullscreen>
+    </iframe>
+    <div class="map-frame-close"></div>
 </div>
+
+<script src="js/scripts.js"></script>
+<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9vmpzZhp7oTgCc2U_gPxPpH0mk7NHpl4&callback=initMap"></script>-->
 
 </body>
 </html>
