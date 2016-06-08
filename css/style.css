@@ -267,33 +267,63 @@ body.index-page {
     text-transform: none;
 }
 
+/* when js disabled */
+
 .index-container-gallery figure {
-    height: 164px;
+    overflow: auto;
+    height: 315px;
     margin: 0;
-    margin-bottom: 35px;
     border: 7px solid #ffffff;
     background-color: #e5e5e5;
 }
 
 .index-container-gallery img {
+    width: 265px;
+    height: auto;
+}
+
+.index-container-gallery .btn {
+    display: none;
+}
+
+/* when js enabled */
+
+.js.index-container-gallery figure {
+    position: relative;
+    overflow: visible;
+    height: 164px;
+    margin-bottom: 35px;
+}
+
+.js.index-container-gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 286px;
     height: 164px;
 }
 
-.index-container-gallery .btn {
+.js.index-container-gallery .visible-slide {
+    z-index: 5;
+}
+
+.js.index-container-gallery .btn {
     position: absolute;
     bottom: 0;
+    display: block;
     width: 140px;
     margin: 0;
 }
 
-.index-container-gallery .btn-prev {
+.js.index-container-gallery .btn-prev {
     left: 0;
 }
 
-.index-container-gallery .btn-next {
+.js.index-container-gallery .btn-next {
     right: 0;
 }
+
+/*  */
 
 .index-container-form input {
     font: inherit;
@@ -1041,17 +1071,40 @@ input[type="radio"][readonly] + label {
 /* FRAME ANIMATIONS */
 
 @keyframes bounce {
-    0% {transform: translateY(-2000px);}
-    70% {transform: translateY(30px);}
-    90% {transform: translateY(-10px);}
-    100% {transform: translateY(0);}
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes shake {
-    0% {transform: translateX(0);}
-    10%, 30%, 50%, 70%, 90% {transform: translateX(10px);}
-    20%, 40%, 60%, 80% {transform: translateX(-10px);}
-    100% {transform: translateX(0);}
+    0% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* OVERLAY */
@@ -1090,11 +1143,11 @@ input[type="radio"][readonly] + label {
 
 .login-frame-opened {
     display: block;
-    animation: bounce .5s;
+    animation: bounce 0.5s;
 }
 
 .login-frame-error {
-    animation: shake .5s;
+    animation: shake 0.5s;
 }
 
 .login-frame-close {
@@ -1196,8 +1249,8 @@ input[type="radio"][readonly] + label {
     box-sizing: border-box;
     width: 780px;
     height: 575px;
-    margin-left: -390px;
     margin-top: -285px;
+    margin-left: -390px;
     border: 7px solid #ffffff;
     background: #e5e5e5 url("../img/map.jpg") no-repeat center;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
@@ -1205,7 +1258,7 @@ input[type="radio"][readonly] + label {
 
 .map-frame-opened {
     display: block;
-    animation: bounce .5s;
+    animation: bounce 0.5s;
 }
 
 .map-frame-close {

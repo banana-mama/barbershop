@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Barbershop &bull; Borodinski</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/style.min.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body class="index-page">
@@ -63,6 +65,8 @@
             <h2>Фотогалерея</h2>
             <div class="index-container-gallery">
                 <figure>
+                    <img src="img/slide-01.jpg" width="286" height="164" alt="room" class="visible-slide">
+                    <img src="img/slide-01.jpg" width="286" height="164" alt="room">
                     <img src="img/slide-01.jpg" width="286" height="164" alt="room">
                 </figure>
                 <button class="btn btn-prev" disabled>Назад</button>
@@ -110,9 +114,9 @@
         </section>
         <section class="footer-social">
             <p>Давайте дружить!</p>
-            <a href="#" class="social-btn social-btn-vk">ВКонтакте</a>
-            <a href="#" class="social-btn social-btn-facebook">Facebook</a>
-            <a href="#" class="social-btn social-btn-instagram">Instagram</a>
+            <a href="#" title="ВКонтакте" class="social-btn social-btn-vk">ВКонтакте</a>
+            <a href="#" title="Facebook"  class="social-btn social-btn-facebook">Facebook</a>
+            <a href="#" title="Instagram"  class="social-btn social-btn-instagram">Instagram</a>
         </section>
         <section class="footer-copyrights">
             <p>Разработано:</p>
@@ -155,7 +159,9 @@
     <div class="map-frame-close"></div>
 </div>
 
-<script src="js/scripts.js"></script>
+<!--<script src="js/scripts.js"></script>-->
+<script src="js/scripts.min.js"></script>
+<!--<script src="js/prefixfree.min.js"></script>-->
 <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9vmpzZhp7oTgCc2U_gPxPpH0mk7NHpl4&callback=initMap"></script>-->
 
 </body>
